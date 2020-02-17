@@ -1,0 +1,38 @@
+{
+  "name": "reply",
+  "permissions": "MANAGE_MESSAGES",
+  "restriction": "1",
+  "_id": "QWaYY",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "k",
+      "name": "Store Command Params"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "18",
+      "storage": "1",
+      "varName2": "gh",
+      "name": "Store Member Info"
+    },
+    {
+      "channel": "6",
+      "varName": "member",
+      "message": "**${tempVars(\"gh\")}**: ${tempVars(\"k\")}",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    }
+  ]
+}
